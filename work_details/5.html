@@ -19,9 +19,9 @@ function getQueryVariable(variable){
        <script src="../lib/nodejs/base64/base64.js"></script>
 <center>
        <input id="itex"/><button onclick="location='?fov='+document.getElementById('itex').value;">Encoding</button>
-       <div><script>document.write(Base64.encode(getQueryVariable("fov")));</script></div>
+       <div><script>document.write(Base64.encode(getQueryVariable("fov") ) );</script></div>
        <input id="gtex"/><button onclick="location='?gov='+document.getElementById('gtex').value;">Decoding</button>
-       <div><script>document.write(Base64.decode(getQueryVariable("gov")));</script></div>
+       <div><script>document.write(Base64.decode(getQueryVariable("gov") ) );</script></div>
 </center>
 
 </body>
