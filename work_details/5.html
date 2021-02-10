@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<title>Base64 Encoding</title>
+<title>Base64 Encoding(NO UNICODE)</title>
 </head>
 <body>
 <script>
@@ -17,9 +17,9 @@ function getQueryVariable(variable){
 </script>
        <script src="../lib/nodejs/base64/base64.js"></script>
 <center>
-       <div><script>document.write(string(getQueryVariable("fov"))+"<br/><br/>")</script></div>
+       <div><script>document.write(String(getQueryVariable("fov"))+"<br/><br/>")</script></div>
       
-       <div><script>document.write("<br/><br/>Base64:"+Base64.encode(string(getQueryVariable("fov")) ) )</script></div>
+       <div><script>document.write("<br/><br/>Base64:"+Base64.encode(String(getQueryVariable("fov")) ) )</script></div>
 </center>
 
 </body>
