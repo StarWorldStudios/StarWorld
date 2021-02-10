@@ -16,9 +16,9 @@ function getQueryVariable(variable){
 </script>
        <script src="../lib/nodejs/base64/base64.js"></script>
 <center>
-       <div><script>document.write("Text:"+getQueryVariable("fov"))</script></div>
-       <br/><br/><br/>
-       <div><script>document.write("Base64:"+Base64.encode(getQueryVariable("fov") ) )</script></div>
+       <div><script>document.write("Text:"+getQueryVariable("fov")+"<br/><br/>")</script></div>
+      
+       <div><script>document.write("<br/><br/>Base64:"+Base64.encode(getQueryVariable("fov") ) )</script></div>
 </center>
 
 </body>
