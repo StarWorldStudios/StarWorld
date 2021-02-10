@@ -16,12 +16,12 @@ function getQueryVariable(variable){
 }
 if (!!window.ActiveXObject || "ActiveXObject" in window)
 {
-       location="404";
+       document.getElementById('noie').innerHTML = "Ahoh, there is an error in your browser. It is recommended to change to Google Chrome or Microsoft Edge browser";
 }
 
 </script>
        <script src="../lib/nodejs/base64/base64.js"></script>
-<center>
+<center id="noie">
        <input id="itex"/><button onclick="location='?fov='+document.getElementById('itex').value;">Encoding</button>
        <div><script>document.write(Base64.encode(getQueryVariable("fov") ) );</script></div>
        <input id="gtex"/><button onclick="location='?gov='+document.getElementById('gtex').value;">Decoding</button>
