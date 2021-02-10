@@ -11,7 +11,6 @@ function getQueryVariable(variable){
        let vars = query.split("&");
        for (let i=0;i<vars.length;i++) {
                let pair = vars[i].split("=");
-               return ""
                if(pair[0] == variable){return pair[1];}
        }
 }
