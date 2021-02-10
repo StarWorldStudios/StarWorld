@@ -14,15 +14,13 @@ function getQueryVariable(variable){
                if(pair[0] == variable){return pair[1];}
        }
 }
-document.getElementById("gtex").value = Base64.decode(String(getQueryVariable("gov"));
-document.getElementById("gb64").value = Base64.encode(String(getQueryVariable("fov"));
 </script>
        <script src="../lib/nodejs/base64/base64.js"></script>
 <center>
        <input id="itex"/><button onclick="location='?fov='+document.getElementById('itex').value;">Encoding</button>
-       <textarea id="gb64"></textarea>
+       <div><script>document.write(Base64.encode(String(getQueryVariable("fov")));</script></div>
        <input id="gtex"/><button onclick="location='?gov='+document.getElementById('gtex').value;">Decoding</button>
-       <textarea id="gtex"></textarea>
+       <div><script>document.write(Base64.decode(String(getQueryVariable("gov")));</script></div>
 </center>
 
 </body>
