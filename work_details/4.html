@@ -9,8 +9,8 @@
 from browser import document, alert
 def echo(event):
     alert(document["zone"].value)
-    document['mybutton'].bind('click', echo)
+    document['run'].bind('click', echo('Hello'))
 </script>
-<input id="zone"><button id="mybutton">click !</button>
+<input id="zone"><button id="run">Run</button>
 </body>
 </html>
