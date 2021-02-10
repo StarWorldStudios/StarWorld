@@ -5,6 +5,7 @@
 </head>
 <body>
 <script>
+//Base64.decode('base64')
 function getQueryVariable(variable){
        let query = window.location.search.substring(1);
        let vars = query.split("&");
@@ -16,9 +17,9 @@ function getQueryVariable(variable){
 </script>
        <script src="../lib/nodejs/base64/base64.js"></script>
 <center>
-       <div><script>document.write("Text:"+str(getQueryVariable("fov"))+"<br/><br/>")</script></div>
+       <div><script>document.write(string(getQueryVariable("fov"))+"<br/><br/>")</script></div>
       
-       <div><script>document.write("<br/><br/>Base64:"+Base64.encode(str(getQueryVariable("fov")) ) )</script></div>
+       <div><script>document.write("<br/><br/>Base64:"+Base64.encode(string(getQueryVariable("fov")) ) )</script></div>
 </center>
 
 </body>
