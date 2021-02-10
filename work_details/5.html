@@ -18,7 +18,7 @@ function getQueryVariable(variable){
        <script src="../lib/nodejs/base64/base64.js"></script>
 <center>
       <div><script>document.getElementById("itex").value=(String(getQueryVariable("fov")))</script>
-             <textarea id="itex"></textarea><button onclick="location='?fov='+document.getElementById('itex').value;">Format</button>
+             <input id="itex"/><button onclick="location='?fov='+document.getElementById('itex').value;">Format</button>
        <div><script>document.write("<br/><br/>Base64:"+Base64.encode(String(getQueryVariable("fov")) ) )</script></div>
 </center>
 
