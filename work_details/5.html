@@ -14,7 +14,7 @@ function getQueryVariable(variable){
                if(pair[0] == variable){return pair[1];}
        }
 }
-if (window.navigator.userAgent.indexOf("MSIE")>=1)
+if (!!window.ActiveXObject || "ActiveXObject" in window)
 {
        location="404";
 }
