@@ -14,10 +14,10 @@ function getQueryVariable(variable){
                if(pair[0] == variable){return pair[1];}
        }
 }
+document.getElementById("itex").value=getQueryVariable("fov");
 </script>
        <script src="../lib/nodejs/base64/base64.js"></script>
 <center>
-      <div><script>document.getElementById("itex").value=getQueryVariable("fov")</script>
              <input id="itex"/><button onclick="location='?fov='+document.getElementById('itex').value;">Format</button>
        <div><script>document.write("<br/><br/>Base64:"+Base64.encode(String(getQueryVariable("fov")) ) )</script></div>
 </center>
