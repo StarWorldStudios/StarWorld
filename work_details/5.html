@@ -14,6 +14,15 @@ function getQueryVariable(variable){
                if(pair[0] == variable){return pair[1];}
        }
 }
+function isIE() { //ie?
+     if (!!window.ActiveXObject || "ActiveXObject" in window)
+            { return true; }
+     else
+            { return false; }
+ }
+if isIE(){
+   location="404";
+}
 </script>
        <script src="../lib/nodejs/base64/base64.js"></script>
 <center>
