@@ -35,6 +35,6 @@
 
 <table>
   <tr>
-    <td>Copyright &copy; 2020-2021 StarWorld Studio All Rights Reserved</td>
+    <td><font color="blue">Copyright &copy; 2020-2021 StarWorld Studio All Rights Reserved</font></td>
   </tr>
 </table>
