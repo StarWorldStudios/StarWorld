@@ -3,7 +3,7 @@
 ## About StarWorldStudio
 
 > StarWorld Studio Will provide you with better software!
-> If you want to quote Star.Js code on the webpage, please add it at the end of the head tag of the webpage:"<kbd>'''<title>Example | StarJs</title>'''</kbd>"
+> If you want to quote Star.Js code on the webpage, please add it at the end of the head tag of the webpage:"<kbd>&lt;title&gt;Example | StarJs&lt;title&gt;</kbd>"
 
 
 ## Member
