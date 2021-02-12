@@ -32,3 +32,9 @@
 
 ## You may want to know:
 > [Rusty Lake](http://www.rustylake.com/)
+
+<table>
+  <tr>
+    <td>Copyright &copy; 2020-2021 StarWorld Studio All Rights Reserved</td>
+  </tr>
+</table>
