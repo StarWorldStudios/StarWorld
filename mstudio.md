@@ -9,6 +9,7 @@
 
 
 ```html
+<meta content="This website uses the Stanages engine. If you have any questions, please refer to the related article (https://starworldstudios.github.io/StarWorld/mstudio)"/>
 <title>Example | StarJs<title>
 ```
 
