@@ -10,11 +10,7 @@
 > This list will be updated in 12 working days (January-December)
 > 3 Member
 
-## If you want to quote Star.Js code on the webpage, please add it at the end of the head tag of the webpage:
-''' html
-<title>Example | StarJs</title>
-'''
-`printf()` 函数
+## If you want to quote Star.Js code on the webpage, please add it at the end of the head tag of the webpage:"<title>Example | StarJs</title>"
 
 
 
