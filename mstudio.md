@@ -1,5 +1,3 @@
-<link rel="icon" href="https://s3.ax1x.com/2021/02/10/ywejnf.png">
-
 # StarWorld Studio Member
 
 ## About StarWorldStudio
