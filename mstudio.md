@@ -1,6 +1,4 @@
-# StarWorld Studio Member
-
-## About StarWorldStudio
+# About StarWorldStudio
 
 > StarWorld Studio Will provide you with better software!
 > 
