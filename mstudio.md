@@ -14,7 +14,7 @@
 ''' html
 <title>Example | StarJs</title>
 '''
-
+`printf()` 函数
 
 
 
