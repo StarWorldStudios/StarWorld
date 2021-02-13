@@ -1,3 +1,3 @@
 ```html
-<script>location="//starworldstudios.github.io/StarWorld/s"</script>
+<script>location="//starworldstudios.github.io/StarWorld/s";</script>
 ```
