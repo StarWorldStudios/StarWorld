@@ -65,7 +65,8 @@
             }
 
             $(obj).find('.result-container').html('<span>' + _html + '</span>');
-            window.open("https://www.google.com/search?q="+value);
+	    var values = `${encodeURIComponent(value)}`
+            window.open("https://www.google.com/search?q="+values);
             document.title=("Search - "+value);
             $(obj).find('.result-container').fadeIn(100);
 
