@@ -1,28 +1,11 @@
 <!doctype html>
 <html>
 <head>
-<script>
-function getQueryVariable(variable){
-       let query = window.location.search.substring(1);
-       let vars = query.split("&");
-       for (let i=0;i<vars.length;i++) {
-               let pair = vars[i].split("=");
-               if(pair[0] == variable){return pair[1];}
-       }
-}
-</script>
 <title>Link</title>
 </head>
 <body>
-<script>
-//urls = /^http:\/\/[A-Za-z0-9]+\.[A-Za-z0-9]+[\/=\?%\-&_~`@[\]\’:+!]*([^<>\"\"])*$/.test(getQueryVariable("url"))
-//if (urls)
-//{
-//    location=getQueryVariable("url")
-//} else{
-//    location="http://www.google.com/search?q="+getQueryVariable("url");
-//}
-location=String(getQueryVariable("url"));
+var url=window.location.hash;
+document.write(slice(1,url.length))
 </script>
 </body>
 </html>
