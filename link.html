@@ -1,3 +1,6 @@
+<!doctype html>
+<html>
+<head>
 <script>
 function getQueryVariable(variable){
        let query = window.location.search.substring(1);
@@ -6,5 +9,14 @@ function getQueryVariable(variable){
                let pair = vars[i].split("=");
                if(pair[0] == variable){return pair[1];}
 }
-location=String(getQueryVariable("url"));
 </script>
+<title>Link</title>
+</head>
+<body>
+       <center>
+              <script>document.write(getQueryVariable("url"));</script>
+              <br/>
+              <button onclick="location=getQueryVariable('url')">Goto <script>document.write(getQueryVariable("url"));</script></button>
+       </center>
+</body>
+</html>
