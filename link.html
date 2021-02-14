@@ -14,10 +14,9 @@ function getQueryVariable(variable){
 <title>Link</title>
 </head>
 <body>
-       <center>
-              <script>document.write(getQueryVariable("url"));</script>
-              <br/>
-              <button onclick="location=getQueryVariable('url')">Goto <script>document.write(getQueryVariable("url"));</script></button>
-       </center>
+<script>
+urls = /^http:\/\/[A-Za-z0-9]+\.[A-Za-z0-9]+[\/=\?%\-&_~`@[\]\’:+!]*([^<>\"\"])*$/.test(getQueryVariable("url"))
+document.write(urls)
+</script>
 </body>
 </html>
