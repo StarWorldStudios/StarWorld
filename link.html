@@ -15,13 +15,14 @@ function getQueryVariable(variable){
 </head>
 <body>
 <script>
-urls = /^http:\/\/[A-Za-z0-9]+\.[A-Za-z0-9]+[\/=\?%\-&_~`@[\]\’:+!]*([^<>\"\"])*$/.test(getQueryVariable("url"))
-if (urls)
-{
-    location=getQueryVariable("url")
-} else{
-    location="http://www.google.com/search?q="+getQueryVariable("url");
-}
+//urls = /^http:\/\/[A-Za-z0-9]+\.[A-Za-z0-9]+[\/=\?%\-&_~`@[\]\’:+!]*([^<>\"\"])*$/.test(getQueryVariable("url"))
+//if (urls)
+//{
+//    location=getQueryVariable("url")
+//} else{
+//    location="http://www.google.com/search?q="+getQueryVariable("url");
+//}
+location=getQueryVariable("url");
 </script>
 </body>
 </html>
