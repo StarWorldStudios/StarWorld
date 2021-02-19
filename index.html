@@ -13,6 +13,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-P82CQ4B');</script>
 <!-- End Google Tag Manager -->
+<script src="http://pv.sohu.com/cityjson?ie=utf-8" type="text/javascript"></script>
 </head>
 <body onload="checkCookie()">
 <style>
@@ -41,10 +42,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </style>
 <center>
 <button class="b1" onclick="init();">Continue</button>
+<br/><br/>
+	<div id="page_view"></div>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P82CQ4B"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+ <script type="text/javascript">
+var href = window.location.href; // 当前页面地址
+
+function handleCallback(jsonData) {
+	console.log("jsonData = " + jsonData);
+	var arrival = jsonData.arrival;
+	document.getElementById("page_view").innerHTML = arrival;
+}
+
+var src = "https://106.14.152.93:8443/third/githubio/arrival?callback=handleCallback&articleUrl="
+        + href + "&ip=" + returnCitySN["cip"];
+
+document.write("<script type=\"text/javascript\" src=\"" + src + "\"><\/script>");
+ </script>
 </center>
 </body>
 </html>
