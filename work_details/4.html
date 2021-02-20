@@ -3,7 +3,50 @@
 <head>
 <script type="text/javascript" src="../lib/nodejs/brython/brython.js"></script>
   <title>Python Emulator</title>
-</head>
+  	  <style>
+    .headimg{
+      border-radius: 30px;
+    }
+    body{
+    background-color:#0066CC;
+    }
+    .spinner {
+      width: 120px;
+      height: 120px;
+      border-radius: 30px;
+      background-color: #000000;
+      -webkit-animation: rotateplane 1.2s infinite ease-in-out;
+      animation: rotateplane 1.2s infinite ease-in-out;
+      margin: 100px auto;
+    }
+     
+    @-webkit-keyframes rotateplane {
+      0% { -webkit-transform: perspective(120px) }
+      50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+      100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+    }
+     
+    @keyframes rotateplane {
+      0% {
+        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+      } 50% {
+        transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+      } 100% {
+        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+      }
+    }
+    </style>
+<div class="spinner" id="loading"><center><img src="https://starworldstudios.github.io/Staillr/starworld.png" height="110px" width="110px" class="headimg"/></center></div>
+<script>
+window.onload = function(){
+document.getElementById("loading").style.display = "none"
+document.body.style.backgroundColor="#FFFFFF"
+} 
+</script>
+  </head>
 <body onload="brython()">
 <script type="text/python">
 from browser import document, alert
