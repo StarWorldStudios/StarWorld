@@ -2,13 +2,13 @@
 
 > StarWorld Studio Will provide you with better software!
 > 
-> If you want to quote Star.Js code on the webpage, please add it at the end of the head tag of the webpage:
+> If you want to quote Star.Js or StsrWorldShell code on the webpage, please add it at the end of the head tag of the webpage:
 
 
 ```html
 <meta content="This website uses the Stanages engine. If you have any questions, please refer to the related article (https://starworldstudios.github.io/StarWorld/mstudio)"/>
 <link rel="canonical" href="https://starworldstudios.github.io/StarWorld/mstudio" />
-<title>Example | StarJs<title>
+<title>Example | StarShell<title>
 ```
 
 
